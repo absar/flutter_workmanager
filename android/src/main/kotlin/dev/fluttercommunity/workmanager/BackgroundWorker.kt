@@ -137,12 +137,6 @@ class BackgroundWorker(
         if (result != null) {
             this.completer?.set(result)
         }
-
-        // If stopEngine is called from `onStopped`, it may not be from the main thread.
-        Handler(Looper.getMainLooper()).post {
-            engine?.destroy()
-            engine = null
-        }
     }
 
     override fun onMethodCall(call: MethodCall, r: MethodChannel.Result) {
