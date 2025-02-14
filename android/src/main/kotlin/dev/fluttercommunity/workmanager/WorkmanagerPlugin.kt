@@ -30,24 +30,4 @@ class WorkmanagerPlugin : FlutterPlugin {
         methodChannel = null
         workmanagerCallHandler = null
     }
-
-    companion object {
-        var pluginRegistryCallback: PluginRegistry.PluginRegistrantCallback? = null
-
-        @JvmStatic
-        fun registerWith(registrar: PluginRegistry.Registrar) {
-            val plugin = WorkmanagerPlugin()
-            plugin.onAttachedToEngine(registrar.context(), registrar.messenger())
-            registrar.addViewDestroyListener {
-                plugin.onDetachedFromEngine()
-                false
-            }
-        }
-
-        @Deprecated(message = "Use the Android v2 embedding method.")
-        @JvmStatic
-        fun setPluginRegistrantCallback(pluginRegistryCallback: PluginRegistry.PluginRegistrantCallback) {
-            Companion.pluginRegistryCallback = pluginRegistryCallback
-        }
-    }
 }
