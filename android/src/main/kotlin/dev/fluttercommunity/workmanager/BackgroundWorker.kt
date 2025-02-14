@@ -14,6 +14,7 @@ import io.flutter.embedding.engine.loader.FlutterLoader
 import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.view.FlutterCallbackInformation
+import io.flutter.plugins.GeneratedPluginRegistrant
 import java.util.Random
 
 /***
