@@ -1,3 +1,8 @@
+# ⚠️ DEPRECATED ⚠️
+This repository is deprecated and will no longer be maintained.
+It was integrated into a monorepo with https://github.com/BelimoAutomationAG/belimo_assistant/pull/2901.
+_____________________________
+
 # Flutter Workmanager
 
 [![pub package](https://img.shields.io/pub/v/workmanager.svg)](https://pub.dartlang.org/packages/workmanager)
